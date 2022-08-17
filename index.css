@@ -2,14 +2,14 @@
   margin: 0;
   border: 0;
 }
-#1 {
+#c1 {
   border: 30px solid green;
   background-color: beige;
 }
-#2 {
+#c2 {
   border: 1px solid orange;
 }
-#3 {
+#c3 {
   border: 1px solid blueviolet;
 }
 .big-container {
@@ -20,4 +20,5 @@
   height: 50vh;
   width: 25%;
   margin: 10px;
+  border: 1px solid black;
 }
