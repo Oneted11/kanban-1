@@ -3,14 +3,13 @@
   border: 0;
 }
 #c1 {
-  border: 30px solid green;
-  background-color: beige;
+  border: 2px solid lime;
 }
 #c2 {
-  border: 1px solid orange;
+  border: 2px solid orange;
 }
 #c3 {
-  border: 1px solid blueviolet;
+  border: 2px solid blueviolet;
 }
 .big-container {
   display: flex;
@@ -20,5 +19,11 @@
   height: 50vh;
   width: 25%;
   margin: 10px;
-  border: 1px solid black;
+  border-radius: 4px;
+  padding: 4px;
+}
+.box {
+  height: 40px;
+  width: 40px;
+  border: 2px solid black;
 }
