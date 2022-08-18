@@ -9,10 +9,17 @@
   </head>
   <body>
     <div class="big-container">
-      <div class="container" id="c1">todo</div>
-      <div class="container" id="c2">in progress</div>
-      <div class="container" id="c3">done</div>
+      <div class="container" id="c1" ondrop="dropHandler(event)">todo</div>
+      <div class="container" id="c2" ondrop="dropHandler">in progress</div>
+      <div class="container" id="c3" ondrop="dropHandler">done</div>
     </div>
     <div class="box" draggable="true"></div>
+    <script>
+      function dropHandler(e) {
+        e.preventDefault();
+        e.target.appendChild(document.getElementById(e.target.id));
+        console.log(e);
+      }
+    </script>
   </body>
 </html>
