@@ -2,7 +2,9 @@
 
 - [x] Make 3 Boxes
 - [x] Make 1 draggable box
-- [ ] Test on drag actions
+- [x] Test on drag actions
+- [ ] Add form for tasks
+- [ ] Add storage
 
 # Learnings
 
