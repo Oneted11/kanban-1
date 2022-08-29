@@ -17,8 +17,22 @@
       >
         todo
       </div>
-      <div class="container" id="c2" ondrop="dropHandler">in progress</div>
-      <div class="container" id="c3" ondrop="dropHandler">done</div>
+      <div
+        class="container"
+        id="c2"
+        ondrop="dropHandler(event)"
+        ondragover="event.preventDefault()"
+      >
+        in progress
+      </div>
+      <div
+        class="container"
+        id="c3"
+        ondrop="dropHandler(event)"
+        ondragover="event.preventDefault()"
+      >
+        done
+      </div>
     </div>
     <div
       id="box1"
@@ -35,7 +49,6 @@
         e.target.appendChild(document.getElementById(data));
       }
       function dragStartHandler(e) {
-        // e.preventDefault();
         //effects either move ,copy or link
         e.dataTransfer.dropEffect = "move";
         //stores data you want to send to the drop event
